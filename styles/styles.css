@@ -16,6 +16,11 @@ body {
   transition: ease-in-out 1s;
 }
 
+.close {
+  background: transparent !important;
+  border: none;
+}
+
 .offcanvas {
   background-color: #1B1B1F;
 }

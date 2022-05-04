@@ -21,7 +21,11 @@ body{
     
     transition: ease-in-out 1s;
 }
-
+.close{
+    background: transparent !important;
+    border: none;
+    
+}
 .offcanvas{
     background-color: $base;
 }
