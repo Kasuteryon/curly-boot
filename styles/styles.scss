@@ -4,6 +4,7 @@ $body-color: linear-gradient(#1B1B1F, #2A2C30);
 $shadow: rgba(136, 172, 243, 0.25) 0px 10px 30px, rgba(0, 0, 0, 0.03) 0px 1px 1px,
          rgba(47, 62, 96, 0.01) 0px 10px 20px, rgba(76, 102, 148, 0.13) 0px 1px 3px;
 
+$purple: linear-gradient(to right, #6A2AD4, #DE40A7);
 body{
     background: $base;
 }
@@ -21,6 +22,13 @@ body{
     transition: ease-in-out 1s;
 }
 
+.offcanvas{
+    background-color: $base;
+}
+.offcanvas-body  p, .offcanvas-title{
+    color: white !important;
+}
+
 .uil{
     color: white;
     size: 50px;
@@ -32,19 +40,27 @@ body{
 }
 
 .navbar-white{
-    background-color: $base !important;
-    margin-right: 50px;
-    margin-left: 50px;
-    //margin-top: 100px !important;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
     transition: ease 1s;
+    background-color: $base !important;
+    font-weight: bold;
+    
+
+    .logo{
+        width: 50px;
+        height: 50px;
+        transition: ease-in-out 2s;
+    }
 }
 
 .hero-img{
     width:100%;
     //filter: brightness(80%);
+}
+
+.carousel-img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
 }
 
 .gallery{
@@ -100,6 +116,7 @@ body{
     border-radius: 10px !important;
 }
 
+
 .header {
     opacity: 0;
     transition: opacity 2s .25s ease-out;
@@ -115,7 +132,7 @@ body{
 
 .btn-success{
     background-color: none !important;
-    background: linear-gradient(to right, #6A2AD4, #DE40A7) !important;
+    background: $purple !important;
     border: none;
     padding: 10px;
     font-weight: bold !important;

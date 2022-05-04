@@ -1,7 +1,7 @@
 // DETECTA VIEWPORT PARA CSS ANIMATIONS ^u^
 window.addEventListener('scroll', () =>{
     let nav = document.querySelector('nav');
-  
+    console.log(window.scrollY);
     if (window.scrollY > 100)
     {
       //nav.classList.remove('fixed-top');
